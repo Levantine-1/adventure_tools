@@ -1,0 +1,45 @@
+name: "Lenneth Valkyrie"
+image_location: "https://i.pinimg.com/originals/ab/64/b0/ab64b0d7404ee1f684553b137e81622a.jpg"
+
+physical_description: "Winged Humanoid (Valkyrie)"
+alignment: "Neutral Good"
+stats:
+  ArmorClass: 16
+  HP: 100
+  STR: 8
+  DEX: 14
+  CON: 10
+  INT: 10
+  WIS: 8
+  CHA: 8
+
+skills:
+  Summon Einherjar:
+    Descriptions:
+      - "Summons up to 3 NPCs to fight along side her"
+      - "Cost 1 AP per NPC summon"
+  Nibelung Valesti:
+    Descriptions:
+      - "Ultimate Attack: Divine Assault"
+      - "Cost 5 AP"
+
+challenge_rating: "1/4 (50XP)"
+
+description: |
+  Lenneth is generally a kind person, but is merciless against her enemies. 
+
+  She is stoic but determined when it comes to tending her duties as a Valkyrie and then as Lord of Creation. 
+
+  Unlike many of the Aesir, Lenneth does not hold humans in contempt. Rather, she enjoys their company and eventually becomes their protector. 
+
+  However, those who show little kindness or compassion to others are disliked heavily by Lenneth, who acts very indifferent towards them. 
+
+  She despises those who would disturb the souls of the dead or those who manipulate humans in general. 
+
+  Lenneth also holds a deep hatred for the undead, particularly Vampires, which she considers abominations. 
+
+  Towards the end of Valkyrie Profile, Lenneth abandons her allegiance to Odin and the other gods as she vows to prevent Loki from destroying Midgard.
+
+  Calm and level-headed, Lenneth speaks with an air of authority and confidence. Her combination of loyalty and independence are considered typical of middle-born children. Her quotes are not insulting, but are meant to warn off her opponents. She is described by most characters as being very beautiful.
+
+  It is notable that during the C ending of the first Valkyrie Profile, Freya refers to Lenneth as the Valkyrie's primary ego. Since her personality is more balanced compared to her sisters, this is quite fitting.

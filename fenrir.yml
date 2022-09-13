@@ -1,0 +1,30 @@
+name: "Fenrir"
+image_location: "https://img15.deviantart.net/e938/i/2005/035/e/1/tremorworks__fenrir_finis_by_rachaelm5.jpgasdf"
+
+physical_description: "Giant dog (Nordic)"
+alignment: "Chaotic Neutral"
+stats:
+  ArmorClass: 20
+  HP: 100
+  STR: 20
+  DEX: 18
+  CON: 25
+  INT: 25
+  WIS: 30
+  CHA: 10
+
+skills:
+  Swallow Whole:
+    Descriptions:
+      - "Swallows you whole"
+  Howl:
+    Descriptions:
+      - "Induces fear"
+  kevinlover:
+    Descriptions:
+      - "Great love for kevin lai"
+
+challenge_rating: "20 (5000XP)"
+
+description: |
+  Fenrir is a super-sized wolf. At birth, he was already considered a threat to the gods, and as he grew, it became clear that he would turn into a jotunn, or giant, among wolves. As an adolescent, Fenrir was so large that the drool and foam which spill from his mouth formed a river.
