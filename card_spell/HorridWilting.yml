@@ -1,0 +1,77 @@
+card_type: spell
+image_location: ""
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Abi-Dalzim's Horrid Wilting",
+      "source": "XGE",
+      "page": 150,
+      "otherSources": [
+          {
+              "source": "EEPC",
+              "page": 15
+          }
+      ],
+      "level": 8,
+      "school": "N",
+      "time": [
+          {
+              "number": 1,
+              "unit": "action"
+          }
+      ],
+      "range": {
+          "type": "point",
+          "distance": {
+              "type": "feet",
+              "amount": 150
+          }
+      },
+      "components": {
+          "v": true,
+          "s": true,
+          "m": "a bit of sponge"
+      },
+      "duration": [
+          {
+              "type": "instant"
+          }
+      ],
+      "entries": [
+          "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage. A creature takes {@damage 12d8} necrotic damage on a failed save, or half as much damage on a successful one.",
+          "Nonmagical plants in the area that aren't creatures, such as trees and shrubs, wither and die instantly."
+      ],
+      "damageInflict": [
+          "necrotic"
+      ],
+      "savingThrow": [
+          "constitution"
+      ],
+      "areaTags": [
+          "C"
+      ],
+      "classes": {
+          "fromClassList": [
+              {
+                  "name": "Sorcerer",
+                  "source": "PHB"
+              },
+              {
+                  "name": "Wizard",
+                  "source": "PHB"
+              }
+          ],
+          "fromClassListVariant": [
+              {
+                  "name": "Warlock",
+                  "source": "PHB",
+                  "definedInSource": "UAClassFeatureVariants"
+              }
+          ]
+      }
+  }
+
+dm_rules: |
+  None

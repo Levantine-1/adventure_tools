@@ -1,0 +1,53 @@
+card_type: item
+image_location: "https://static.turbosquid.com/Preview/2015/04/25__15_26_32/a0000.jpgea9d3817-b6c5-4df7-9ce6-f095cf1d0abbZoom.jpg"
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Instrument of the Bards, Doss Lute",
+      "source": "DMG",
+      "page": 176,
+      "type": "INS",
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": "by a bard",
+      "reqAttuneTags": [
+          {
+              "class": "bard"
+          }
+      ],
+      "wondrous": true,
+      "weight": 2,
+      "entries": [
+          "An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
+          "You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+          "You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
+          "All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}.",
+          "In addition, the Doss lute can be used to cast {@spell animal friendship}, {@spell protection from energy} (fire only), and {@spell protection from poison}."
+      ],
+      "attachedSpells": [
+          "animal friendship",
+          "fly",
+          "invisibility",
+          "levitate",
+          "protection from evil and good",
+          "protection from energy",
+          "protection from poison"
+      ],
+      "lootTables": [
+          "Magic Item Table F"
+      ],
+      "hasFluffImages": true,
+      "additionalSources": [
+          {
+              "source": "XGE",
+              "page": 83
+          }
+      ]
+  }
+
+dm_rules: |
+  Durable for 10 encounters
+  
+  While equipped, makes you feel the urge to get nude

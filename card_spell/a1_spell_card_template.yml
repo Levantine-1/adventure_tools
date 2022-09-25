@@ -1,0 +1,11 @@
+card_type: spell
+image_location: ""
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+  }
+
+dm_rules: |
+  None

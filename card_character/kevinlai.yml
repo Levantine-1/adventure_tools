@@ -1,0 +1,41 @@
+card_type: character
+name: "Kevin Lai"
+image_location: "C:/Users/Levantine/Pictures/17800214_10209161717468544_2603167562670890478_n.jpg"
+image_rotation: 0
+
+physical_description: "Humanoid (Otaku)"
+alignment: "Chaotic Neutral"
+stats:
+  ArmorClass: 16
+  HP: 100
+  STR: 10
+  DEX: 10
+  CON: 05
+  INT: 00
+  WIS: 00
+  CHA: 00
+
+skills:
+  typical pubg player:
+    Descriptions:
+      - "gets carried"
+
+
+challenge_rating: "No challenge"
+
+description: |
+  Intro
+  
+  Studied at Cypress College
+  
+  Went to Evergreen Valley High School
+  
+  Studied at Evergreen Valley College
+  
+  Lives in San Jose, California
+  
+  From San Jose, California
+  
+  Single
+  
+  Joined February 2009
