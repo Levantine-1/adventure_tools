@@ -1,0 +1,83 @@
+card_type: character
+name: "Lenneth Valkyrie"
+image_location: "https://cdn.donmai.us/original/71/82/71829b073ec645e0072bf8f54983693d.jpg"
+image_rotation: 0
+
+physical_description: "Winged Humanoid (Valkyrie)"
+alignment: "Neutral Good"
+stats:
+  ArmorClass: "??"
+  HP: "??"
+  STR: "??"
+  DEX: "??"
+  CON: "??"
+  INT: "??"
+  WIS: "??"
+  CHA: "??"
+
+skills:
+  Summon Einherjar:
+    Descriptions:
+      - "Summons up to 3 NPCs to fight along side her"
+
+  Bolt Slash:
+    Descriptions:
+      - "Lenneth swings down with her sword once."
+
+  Moment Slide:
+    Descriptions:
+      - "Lenneth slides at the enemy. If they are light enough, they will be tossed a bit into the air."
+
+  Vertical Raid:
+    Descriptions:
+      - "Lenneth swings her sword upward, hitting the enemy twice and knocking them into the air."
+
+  Spread Shot:
+    Descriptions:
+      - "Lenneth fires two shots at the enemy, the second of which explodes on the ground, tossing the opponent into the air."
+
+  Tri-Blast:
+    Descriptions:
+      - "Lenneth fires three arrows from her bow at once."
+
+  Infinity Blast:
+    Descriptions:
+      - "Lenneth fires a powerful volley of attacks."
+
+  Grim Force:
+    Descriptions:
+      - "Lenneth launches a powerful sword attack"
+
+  Feather Sail:
+    Descriptions:
+      - "Lenneth flips and kicks the foe to damage them"
+
+  Gale Winds:
+    Descriptions:
+      - "Sudden swipe that sends forth a whipping wind."
+
+  Code Break:
+    Descriptions:
+      - "A powerful attack, with a chance of inflicting doom."
+
+  Nibelung Valesti:
+    Descriptions:
+      - "Ultimate Attack: DIVINE ASSAULT"
+      - "It shall be engraved upon your soul!"
+
+challenge_rating: "????"
+
+description: |
+  Lenneth is the younger sister of Hrist Valkyrie and the elder sister of Silmeria Valkyrie. Together, the three sisters hold the moniker of the three Goddesses of Fate. As the middle sister, Lenneth represents the present.
+
+  Lenneth takes the appearance of a young woman with blue eyes and long, silver hair.
+  
+  Equipment:
+  
+  Demon Sword "Levantine": A magical black sword said to be capable of maintains equilibrium in Niflheim
+  
+  Quotes:
+  
+  "- To my side my noble einherjar!"
+  
+  "- For those whom have embraced the arms of death! Now, get ready for a true fight!"

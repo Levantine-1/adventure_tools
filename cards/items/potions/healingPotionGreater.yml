@@ -1,0 +1,26 @@
+card_type: item
+image_location: https://s3images.coroflot.com/user_files/individual_files/large_619934_bewqzlkv3g3ceh3_jvfrddjkz.jpg
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Potion of Greater Healing",
+      "source": "DMG",
+      "page": 187,
+      "srd": true,
+      "type": "P",
+      "tier": "minor",
+      "rarity": "uncommon",
+      "entries": [
+          "You regain {@dice 4d4 + 4} hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+      ],
+      "lootTables": [
+          "Magic Item Table A",
+          "Magic Item Table B"
+      ]
+  }
+
+dm_rules: |
+  None

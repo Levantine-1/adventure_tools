@@ -1,0 +1,25 @@
+card_type: item
+image_location: None
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Leather Armor",
+      "source": "PHB",
+      "page": 144,
+      "srd": true,
+      "basicRules": true,
+      "type": "LA",
+      "rarity": "none",
+      "weight": 10,
+      "value": 1000,
+      "ac": 11,
+      "armor": true,
+      "entries": [
+          "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials."
+      ]
+  }
+
+dm_rules: |
+  None

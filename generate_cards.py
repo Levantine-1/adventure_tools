@@ -1,3 +1,5 @@
+import time
+
 from escpos.printer import Network
 import textwrap
 import yaml
@@ -12,7 +14,10 @@ import json
 
 printer_ip = "10.69.69.10"
 
-printerprint = Network(printer_ip)
+printerprint = Network(printer_ip, profile="TM-T88V")
+
+# "screen" or "paper"
+mode = "paper"
 
 
 config_sheet = sys.argv[1]
@@ -34,10 +39,19 @@ banners = {
 }
 
 
-def print_text(text, **mode):
+def print_text(text, **no_newline):
     pp_newline = '''
 '''
-    mode = "paper"
+    newline = "\n"
+
+    try:
+        no_newline = no_newline["no_newline"]
+        if no_newline is True:
+            pp_newline = ''''''
+            newline = ""
+    except KeyError:
+        pass
+
     if mode == "screen":
         printer = print
     else:
@@ -51,7 +65,7 @@ def print_text(text, **mode):
         elif char_count > 42:
             line_list = wrapper.wrap(text=line)
             for line_list_element in line_list:
-                printer(line_list_element + "\n")
+                printer(line_list_element + newline)
         elif char_count < 43:
             printer(line)
     printer(pp_newline)
@@ -66,10 +80,11 @@ def print_image(img_location):
             download_path = "images/cached_images/" + os.path.basename(img_location)
             try:
                 urllib.request.urlretrieve(img_location, download_path)
-                print("Serving cached image")
-                img_location = cache_path
             except Exception as err:
                 print(err)
+        else:
+            print("Serving cached image")
+        img_location = cache_path
 
     if os.path.isfile(img_location):
         print("Serving image from file")
@@ -78,22 +93,39 @@ def print_image(img_location):
         print("Unable to serve a picture")
         # picture = Image.open("images/default.jpg")
         return None
-    resized = picture.resize((500, 650))
+
+    try:
+        max_height = int(conf["max_height"])
+    except KeyError:
+        max_height = 650
+    target_width = 500
+    new_width = target_width
+
+    picture_width = picture.size[0]
+    picture_height = picture.size[1]
+
+    new_height = int(target_width * picture_height / float(picture_width))  # Resize and maintain aspect ratio
+    if new_height > max_height:
+        new_width = int(max_height * target_width / float(new_height))
+        new_height = int(new_width * new_height / float(target_width))
+    resized = picture.resize((new_width, new_height))
     rotated = resized.rotate(conf["image_rotation"])
     black_white = rotated.convert("1")
-    # black_white.show() # Display on screen
     printerprint.image(black_white, center=True)
 
 
 def calculate_modifier(ability_score):
-    int_ability_score = int(ability_score)
-    modifier = math.floor((int_ability_score - 10)/2)  # Round down
-    if modifier < 0:
-        prefix = ""
-    else:
-        prefix = "+"
-    mod_string = prefix + str(modifier)
-    return mod_string
+    try:
+        int_ability_score = int(ability_score)
+        modifier = math.floor((int_ability_score - 10)/2)  # Round down
+        if modifier < 0:
+            prefix = ""
+        else:
+            prefix = "+"
+        mod_string = prefix + str(modifier)
+        return mod_string
+    except ValueError:
+        return ability_score
 
 
 def print_stats_chart():
@@ -152,14 +184,21 @@ def generate_character_card():
 
 
 def print_5e_item_card():
-    ignore_keys = ["name", "source", "page", "tier", "rarity", "hasFluffImages", "srd", "additionalSources"]
+    ignore_keys = ["name", "source", "page", "tier", "rarity", "hasFluffImages", "srd", "additionalSources", "excludes",
+                   "inherits", "otherSources"]
 
     data = json.loads(conf["json_data"])
 
     title = data["name"]
     source = data["source"] + "." + str(data["page"])
-    tier = data["tier"]
-    rarity = data["rarity"]
+    try:
+        tier = data["tier"]
+    except KeyError:
+        tier = "N/A"
+    try:
+        rarity = data["rarity"]
+    except KeyError:
+        rarity = "N/A"
 
     print_text(text=title)
     print_image(img_location=conf["image_location"])
@@ -179,11 +218,18 @@ def print_5e_item_card():
                 print_text(text=string)
                 for entry in data[key]:
                     if type(entry) is dict:
-                        for dict_key in entry:
-                            string = str(dict_key) + ": " + str(entry[dict_key])
-                            print_text(text=string)
-                    string = "- " + str(entry)
-                    print_text(text=string)
+                        if key == "variants":
+                            for variant in data["variants"]:
+                                item_variant = variant["base"]["name"]
+                                string = "- " + item_variant
+                                print_text(text=string, no_newline=False)
+                        else:
+                            for dict_key in entry:
+                                string = str(dict_key) + ": " + str(entry[dict_key])
+                                print_text(text=string)
+                    if key == "variants":
+                        break
+                    print_text(text=str(entry))
                 print_text(text="")
             elif type(data[key]) is not (list, dict):
                 string = str(key) + ": " + str(data[key])

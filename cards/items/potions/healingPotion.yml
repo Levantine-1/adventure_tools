@@ -1,0 +1,32 @@
+card_type: item
+image_location: https://www.kindpng.com/picc/m/541-5412180_healing-potion-png-small-healing-potion-transparent-png.png
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Potion of Healing",
+      "source": "DMG",
+      "page": 187,
+      "srd": true,
+      "otherSources": [
+          {
+              "source": "PHB",
+              "page": 153
+          }
+      ],
+      "type": "P",
+      "tier": "minor",
+      "rarity": "common",
+      "weight": 0.5,
+      "value": 5000,
+      "entries": [
+          "You regain {@dice 2d4 + 2} hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+      ],
+      "lootTables": [
+          "Magic Item Table A"
+      ]
+  }
+
+dm_rules: |
+  None

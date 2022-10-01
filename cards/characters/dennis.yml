@@ -1,0 +1,30 @@
+card_type: character
+name: "Denny Boy"
+image_location: "https://i.pinimg.com/originals/dd/75/43/dd7543dc7c72c72d5ee2d400d118513d.jpg"
+image_rotation: 0
+
+physical_description: "Human"
+alignment: "Chaotic Neutral"
+stats:
+  ArmorClass: 0
+  HP: 100
+  STR: 8
+  DEX: 8
+  CON: 8
+  INT: 5
+  WIS: 5
+  CHA: 5
+
+skills:
+  Lisa Infatuation:
+    Descriptions:
+      - "Always DTF Lisa"
+
+  Fucking Up:
+    Descriptions:
+      - "Messes up everything he does"
+
+challenge_rating: "1/4"
+
+description: |
+  Denny is an orphaned college age adult who Johnny takes under his wing, paying for his apartment and tuition. Denny displays some attributes of autism and is typically heavily reliant on others.
