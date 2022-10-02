@@ -1,6 +1,7 @@
 card_type: item
 image_location: None
 image_rotation: 0
+max_height: 200
 data_source: 5etools
 
 json_data: |

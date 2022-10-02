@@ -1,24 +1,25 @@
 card_type: item
-image_location: None
+image_location: https://i5.walmartimages.com/asr/c3a4f779-481b-4257-b997-c8e86286ac26.6aabf35465adc409a5ade7ea9b9870f6.jpeg
 image_rotation: 0
+max_height: 350
 data_source: 5etools
 
 json_data: |
   {
-	"name": "Potion of Supreme Healing",
-	"source": "DMG",
-	"page": 187,
-	"srd": true,
-	"type": "P",
-	"tier": "minor",
-	"rarity": "very rare",
-	"entries": [
-		"You regain {@dice 10d4 + 20} hit points when you drink this potion. The potion's red liquid glimmers when agitated."
-	],
-	"lootTables": [
-		"Magic Item Table D",
-		"Magic Item Table E"
-	]
+    "name": "Potion of Supreme Healing",
+    "source": "DMG",
+    "page": 187,
+    "srd": true,
+    "type": "P",
+    "tier": "minor",
+    "rarity": "very rare",
+    "entries": [
+        "You regain {@dice 10d4 + 20} hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+    ],
+    "lootTables": [
+        "Magic Item Table D",
+        "Magic Item Table E"
+    ]
   }
 
 dm_rules: |
