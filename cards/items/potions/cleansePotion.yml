@@ -1,0 +1,24 @@
+card_type: item
+image_location: https://cdn.vectorstock.com/i/1000x1000/78/87/cartoon-potion-bottle-vector-8887887.webp
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Elixir of Health (Cleanse)",
+      "source": "DMG",
+      "page": 168,
+      "type": "P",
+      "tier": "minor",
+      "rarity": "rare",
+      "entries": [
+          "When you drink this potion, it cures any disease afflicting you, and it removes the {@condition blinded}, {@condition deafened}, {@condition paralyzed}, and {@condition poisoned} conditions. The clear red liquid has tiny bubbles of light in it."
+      ],
+      "lootTables": [
+          "Magic Item Table C"
+      ]
+  }
+
+dm_rules: |
+  None

@@ -35,7 +35,7 @@ banners = {
     "cr":       "============ Challenge Rating ============",
     "descr":    "============== Description ===============",
     "dm_rules": "=========== Special DM Rules =============",
-    "sp_mats":  "============ Spell Materials=============="
+    "sp_mats":  "============ Spell Materials ============="
 }
 
 
@@ -58,16 +58,19 @@ def print_text(text, **no_newline):
         printer = printerprint.text
 
     wrapper = textwrap.TextWrapper(width=42)
-    for line in text.splitlines():
-        char_count = len(line)
-        if char_count == 0:
-            printer(pp_newline)
-        elif char_count > 42:
-            line_list = wrapper.wrap(text=line)
-            for line_list_element in line_list:
-                printer(line_list_element + newline)
-        elif char_count < 43:
-            printer(line)
+    try:
+        for line in text.splitlines():
+            char_count = len(line)
+            if char_count == 0:
+                printer(pp_newline)
+            elif char_count > 42:
+                line_list = wrapper.wrap(text=line)
+                for line_list_element in line_list:
+                    printer(line_list_element + newline)
+            elif char_count < 43:
+                printer(line)
+    except AttributeError:
+        printer(text)
     printer(pp_newline)
 
 
@@ -98,16 +101,16 @@ def print_image(img_location):
         max_height = int(conf["max_height"])
     except KeyError:
         max_height = 650
-    target_width = 500
-    new_width = target_width
+    max_width = 500
+    new_width = max_width  # Initializing
 
     picture_width = picture.size[0]
     picture_height = picture.size[1]
 
-    new_height = int(target_width * picture_height / float(picture_width))  # Resize and maintain aspect ratio
+    new_height = int(max_width * picture_height / float(picture_width))  # Resize and maintain aspect ratio
     if new_height > max_height:
-        new_width = int(max_height * target_width / float(new_height))
-        new_height = int(new_width * new_height / float(target_width))
+        new_width = int(max_height * max_width / float(new_height))
+        new_height = int(new_width * new_height / float(max_width))
     resized = picture.resize((new_width, new_height))
     rotated = resized.rotate(conf["image_rotation"])
     black_white = rotated.convert("1")
@@ -248,7 +251,8 @@ def print_spell_constants(data):
         "E": "Enchantment",
         "V": "Evocation",
         "I": "Illusion",
-        "N": "Necromancy"
+        "N": "Necromancy",
+        "T": "Transmutation"
     }
 
     source = data["source"] + "." + str(data["page"])
@@ -260,7 +264,10 @@ def print_spell_constants(data):
     if data["range"]["distance"]["type"] == "self":
         range_dist_in_hex = "Self"
     else:
-        range_dist_in_hex = math.floor(data["range"]["distance"]["amount"]/5)
+        try:
+            range_dist_in_hex = math.floor(data["range"]["distance"]["amount"]/5)
+        except KeyError:
+            range_dist_in_hex = data["range"]["distance"]["type"]
 
     verbal = str(data["components"]["v"]).capitalize()
     somatic = str(data["components"]["s"]).capitalize()

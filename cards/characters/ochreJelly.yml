@@ -1,0 +1,31 @@
+card_type: character
+name: Ochre Jelly
+image_location: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/279/1000/1000/636252770058723674.jpeg"
+image_rotation: 0
+
+physical_description: "Jelly"
+alignment: "Neutral"
+stats:
+  ArmorClass: 8
+  HP: 45
+  STR: 15
+  DEX: 6
+  CON: 14
+  INT: 2
+  WIS: 6
+  CHA: 1
+
+skills:
+  Amorphus:
+    Descriptions:
+      - "Jelly can move anywhere, even on occupied spaces"
+  Spider Climb:
+    Descriptions:
+      - "Jelly can move anywhere, even on occupied spaces"
+
+challenge_rating: "1/4"
+
+description: |
+  melee, +4 hit, 1 hex range
+  
+  Can split on slash/lighting dmg

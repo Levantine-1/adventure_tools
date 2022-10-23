@@ -1,0 +1,43 @@
+card_type: character
+name: Orc
+image_location: "https://static.wikia.nocookie.net/forgottenrealms/images/4/43/Orc-5e.jpg"
+image_rotation: 0
+
+physical_description: "Medium Humanoid (Orc)"
+alignment: "Chaotic Evil"
+stats:
+  ArmorClass: 13
+  HP: 15
+  STR: 16
+  DEX: 12
+  CON: 13
+  INT: 7
+  WIS: 11
+  CHA: 10
+
+skills:
+  Basic Melee Attack:
+    Descriptions:
+      - "+2 to hit, reach 1 hex, single target."
+      - "Hit 2 (1d4) bludgeon damage"
+
+challenge_rating: "1/2 (100 XP) 	Proficiency Bonus +2"
+
+description: |
+  Skills Intimidation +2
+  
+  Senses darkvision 60 ft., passive Perception 10
+  
+  Languages Common, Orc
+
+  Aggressive. As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.
+  
+  Actions
+  
+  Greataxe. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.
+  
+  Javelin. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
+  
+  Environment: Arctic, Forest, Grassland, Hill, Mountain, Swamp, Underdark
+  
+  Source: MM, page 246. Also found in HotDQ; LMoP; PotA; SKT; TftYP; ToA; GoS; DIP; ERLW; RMBRE; EGW; IDRotF; CRCotN. Available in the SRD.

@@ -1,0 +1,27 @@
+card_type: character
+name: "Common Human"
+image_location: "https://i.pinimg.com/originals/e1/f1/2f/e1f12f97b91eb3101c867625c40b68e6.png"
+image_rotation: 0
+
+physical_description: "Female Human"
+alignment: "Neutral Good"
+stats:
+  ArmorClass: 5
+  HP: 5
+  STR: 10
+  DEX: 10
+  CON: 10
+  INT: 10
+  WIS: 10
+  CHA: 10
+
+skills:
+  Basic Melee Attack:
+    Descriptions:
+      - "+2 to hit, 1 hex reach, single target"
+      - "2 (1d4) bludgeoning damage"
+
+challenge_rating: "1/4 (50XP)"
+
+description: |
+  Common Human found anywhere

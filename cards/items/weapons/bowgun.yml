@@ -1,0 +1,34 @@
+card_type: item
+image_location: None
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Hand Crossbow",
+      "source": "PHB",
+      "page": 149,
+      "srd": true,
+      "basicRules": true,
+      "type": "R",
+      "rarity": "none",
+      "weight": 3,
+      "value": 7500,
+      "weaponCategory": "martial",
+      "property": [
+          "A",
+          "L",
+          "LD"
+      ],
+      "range": "30/120",
+      "dmg1": "1d6",
+      "dmgType": "P",
+      "crossbow": true,
+      "weapon": true,
+      "ammoType": "crossbow bolt|phb",
+      "entries": []
+  }
+
+dm_rules: |
+  None

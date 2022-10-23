@@ -1,0 +1,27 @@
+card_type: character
+name: "Guard"
+image_location: "https://i.pinimg.com/originals/30/e6/a9/30e6a9943dcc5c18f109d7b25631e5a4.png"
+image_rotation: 0
+
+physical_description: "Female Human Guard"
+alignment: "Neutral Good"
+stats:
+  ArmorClass: 5
+  HP: 5
+  STR: 10
+  DEX: 10
+  CON: 10
+  INT: 10
+  WIS: 10
+  CHA: 10
+
+skills:
+  Basic Melee Attack:
+    Descriptions:
+      - "+4 to hit, 1 hex reach, single target"
+      - "2 (1d4) bludgeoning damage"
+
+challenge_rating: "1/4 (50XP)"
+
+description: |
+  Common Human found anywhere
