@@ -1,0 +1,13 @@
+card_type: plaintext
+image_location: ""
+image_rotation: 0
+data_source: manual
+
+description: |
+  INTERCEPT ATTACK
+  
+  Choose target within 4 hex radius to intercept attack during enemy turn
+  
+  Happens once between your character turn on the first chance to intercept
+  
+  Roll D12 to determine intercept success

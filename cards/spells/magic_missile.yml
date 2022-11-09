@@ -1,0 +1,121 @@
+card_type: spell
+image_location: "https://th.bing.com/th/id/OIP.vJYZ7Y94yN0mfnM8HmKpMAHaHa?pid=ImgDet&rs=1"
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Magic Missile",
+      "source": "PHB",
+      "page": 257,
+      "srd": true,
+      "basicRules": true,
+      "level": 1,
+      "school": "V",
+      "time": [
+          {
+              "number": 1,
+              "unit": "action"
+          }
+      ],
+      "range": {
+          "type": "point",
+          "distance": {
+              "type": "feet",
+              "amount": 120
+          }
+      },
+      "components": {
+          "v": true,
+          "s": true
+      },
+      "duration": [
+          {
+              "type": "instant"
+          }
+      ],
+      "entries": [
+          "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals {@damage 1d4 + 1} force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several."
+      ],
+      "entriesHigherLevel": [
+          {
+              "type": "entries",
+              "name": "At Higher Levels",
+              "entries": [
+                  "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st."
+              ]
+          }
+      ],
+      "damageInflict": [
+          "force"
+      ],
+      "miscTags": [
+          "SGT"
+      ],
+      "areaTags": [
+          "ST",
+          "MT"
+      ],
+      "classes": {
+          "fromClassList": [
+              {
+                  "name": "Sorcerer",
+                  "source": "PHB"
+              },
+              {
+                  "name": "Wizard",
+                  "source": "PHB"
+              }
+          ],
+          "fromSubclass": [
+              {
+                  "class": {
+                      "name": "Cleric",
+                      "source": "PHB"
+                  },
+                  "subclass": {
+                      "name": "Arcana",
+                      "source": "SCAG"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Artificer",
+                      "source": "TCE"
+                  },
+                  "subclass": {
+                      "name": "Armorer (UA)",
+                      "source": "UA2020SubclassesPt3"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Artificer",
+                      "source": "TCE"
+                  },
+                  "subclass": {
+                      "name": "Armorer",
+                      "source": "TCE"
+                  }
+              }
+          ]
+      },
+      "races": [
+          {
+              "name": "Tiefling (Abyssal)",
+              "source": "UAThatOldBlackMagic",
+              "baseName": "Tiefling",
+              "baseSource": "PHB"
+          },
+          {
+              "name": "Tiefling (Mephistopheles)",
+              "source": "UAFiendishOptions",
+              "baseName": "Tiefling",
+              "baseSource": "PHB"
+          }
+      ],
+      "hasFluffImages": true
+  }
+
+dm_rules: |
+  None

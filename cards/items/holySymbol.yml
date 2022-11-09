@@ -1,0 +1,28 @@
+card_type: item
+image_location: None
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Holy Symbol",
+      "source": "PHB",
+      "page": 151,
+      "type": "SCF",
+      "scfType": "holy",
+      "rarity": "none",
+      "focus": [
+          "Cleric",
+          "Paladin"
+      ],
+      "items": [
+          "Amulet|phb",
+          "Emblem|phb",
+          "Reliquary|phb"
+      ],
+      "entries": []
+  }
+
+dm_rules: |
+  None

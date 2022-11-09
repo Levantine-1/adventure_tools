@@ -1,0 +1,31 @@
+card_type: item
+image_location: None
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Longsword",
+      "source": "PHB",
+      "page": 149,
+      "srd": true,
+      "basicRules": true,
+      "type": "M",
+      "rarity": "none",
+      "weight": 3,
+      "value": 1500,
+      "weaponCategory": "martial",
+      "property": [
+          "V"
+      ],
+      "dmg1": "1d8",
+      "dmgType": "S",
+      "dmg2": "1d10",
+      "sword": true,
+      "weapon": true,
+      "entries": []
+  }
+
+dm_rules: |
+  None

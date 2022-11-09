@@ -1,0 +1,27 @@
+card_type: character
+name: Left Cheek
+image_location: "https://th.bing.com/th/id/R.3fa17602345fe566fee1442f538fe094?rik=1QeV0xb%2bBrjYtg&riu=http%3a%2f%2fwww.imfdb.org%2fimages%2fthumb%2f6%2f6b%2fTrans-M203-1.jpg%2f600px-Trans-M203-1.jpg&ehk=6BuL79WHfG%2fV2F7XBpAZfQr2adRY6pXQu56TbFx0Pxs%3d&risl=&pid=ImgRaw&r=0"
+image_rotation: 0
+
+physical_description: "Human"
+alignment: "Neutral Good"
+stats:
+  ArmorClass: 0
+  HP: 100
+  STR: 10
+  DEX: 10
+  CON: 10
+  INT: 10
+  WIS: 10
+  CHA: 10
+
+skills:
+  Basic Melee Attack:
+    Descriptions:
+      - "+2 to hit, reach 1 hex, single target."
+      - "Hit 2 (1d4) bludgeon damage"
+
+challenge_rating: "1/4"
+
+description: |
+  Lorem ipsum dolor

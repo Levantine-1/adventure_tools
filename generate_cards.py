@@ -271,7 +271,10 @@ def print_spell_constants(data):
 
     verbal = str(data["components"]["v"]).capitalize()
     somatic = str(data["components"]["s"]).capitalize()
-    materials = data["components"]["m"]
+    try:
+        materials = data["components"]["m"]
+    except KeyError:
+        materials = "None"
 
     school = "Level " + str(data["level"]) + " " + spell_school_key[data["school"]]
 

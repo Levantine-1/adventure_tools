@@ -1,0 +1,25 @@
+card_type: item
+image_location: None
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Shield",
+      "source": "PHB",
+      "page": 144,
+      "srd": true,
+      "basicRules": true,
+      "type": "S",
+      "rarity": "none",
+      "weight": 6,
+      "value": 1000,
+      "ac": 2,
+      "entries": [
+          "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+      ]
+  }
+
+dm_rules: |
+  None

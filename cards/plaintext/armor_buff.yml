@@ -1,0 +1,16 @@
+card_type: plaintext
+image_location: ""
+image_rotation: 0
+data_source: manual
+
+description: |
+  STONE DEFENSE
+  
+  
+  Roll 1D12 and add that to AC
+  
+  
+  Cooldown 2 Turns
+  
+  
+  Lasts until an attack lands higher than the new AC

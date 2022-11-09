@@ -1,0 +1,179 @@
+card_type: spell
+image_location: "https://th.bing.com/th/id/OIP.vJYZ7Y94yN0mfnM8HmKpMAHaHa?pid=ImgDet&rs=1"
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Arcane Eye",
+      "source": "PHB",
+      "page": 214,
+      "srd": true,
+      "basicRules": true,
+      "level": 4,
+      "school": "D",
+      "time": [
+          {
+              "number": 1,
+              "unit": "action"
+          }
+      ],
+      "range": {
+          "type": "point",
+          "distance": {
+              "type": "feet",
+              "amount": 30
+          }
+      },
+      "components": {
+          "v": true,
+          "s": true,
+          "m": "a bit of bat fur"
+      },
+      "duration": [
+          {
+              "type": "timed",
+              "duration": {
+                  "type": "hour",
+                  "amount": 1
+              },
+              "concentration": true
+          }
+      ],
+      "entries": [
+          "You create an invisible, magical eye within range that hovers in the air for the duration.",
+          "You mentally receive visual information from the eye, which has normal vision and {@sense darkvision} out to 30 feet. The eye can look in every direction.",
+          "As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+      ],
+      "classes": {
+          "fromClassList": [
+              {
+                  "name": "Wizard",
+                  "source": "PHB"
+              },
+              {
+                  "name": "Artificer",
+                  "source": "UAArtificer"
+              },
+              {
+                  "name": "Artificer (Revisited)",
+                  "source": "UAArtificerRevisited"
+              },
+              {
+                  "name": "Artificer",
+                  "source": "TCE"
+              }
+          ],
+          "fromSubclass": [
+              {
+                  "class": {
+                      "name": "Cleric",
+                      "source": "PHB"
+                  },
+                  "subclass": {
+                      "name": "Arcana",
+                      "source": "SCAG"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Cleric",
+                      "source": "PHB"
+                  },
+                  "subclass": {
+                      "name": "Knowledge",
+                      "source": "PHB"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Cleric",
+                      "source": "PHB"
+                  },
+                  "subclass": {
+                      "name": "Knowledge (PSA)",
+                      "source": "PSA"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Warlock",
+                      "source": "PHB"
+                  },
+                  "subclass": {
+                      "name": "Seeker (UA)",
+                      "source": "UATheFaithful"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Sorcerer",
+                      "source": "PHB"
+                  },
+                  "subclass": {
+                      "name": "Clockwork Soul (UA)",
+                      "source": "UA2020SubclassesPt2"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Ranger",
+                      "source": "PHB"
+                  },
+                  "subclass": {
+                      "name": "Swarmkeeper",
+                      "source": "TCE"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Ranger (Spell-less)",
+                      "source": "UAModifyingClasses"
+                  },
+                  "subclass": {
+                      "name": "Swarmkeeper",
+                      "source": "TCE"
+                  }
+              },
+              {
+                  "class": {
+                      "name": "Ranger (Revised)",
+                      "source": "UATheRangerRevised"
+                  },
+                  "subclass": {
+                      "name": "Swarmkeeper",
+                      "source": "TCE"
+                  }
+              }
+          ]
+      },
+      "races": [
+          {
+              "name": "Gnome (Mark of Scribing)",
+              "source": "ERLW",
+              "baseName": "Gnome",
+              "baseSource": "PHB"
+          },
+          {
+              "name": "Half-Elf (Mark of Detection)",
+              "source": "ERLW",
+              "baseName": "Half-Elf",
+              "baseSource": "PHB"
+          }
+      ],
+      "backgrounds": [
+          {
+              "name": "Dimir Operative",
+              "source": "GGR"
+          }
+      ],
+      "eldritchInvocations": [
+          {
+              "name": "Visions of Distant Realms",
+              "source": "PHB"
+          }
+      ]
+  }
+
+dm_rules: |
+  None

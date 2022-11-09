@@ -1,0 +1,27 @@
+card_type: character
+name: NAME
+image_location: "https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/1374682/English/1374682_English_KeyArt-OfficialVideoImage_06cc6d6a-e19d-e911-82a8-dd291e252010.jpg"
+image_rotation: 0
+
+physical_description: "Human"
+alignment: "Neutral Good"
+stats:
+  ArmorClass: 0
+  HP: 100
+  STR: 10
+  DEX: 10
+  CON: 10
+  INT: 10
+  WIS: 10
+  CHA: 10
+
+skills:
+  Basic Melee Attack:
+    Descriptions:
+      - "+2 to hit, reach 1 hex, single target."
+      - "Hit 2 (1d4) bludgeon damage"
+
+challenge_rating: "1/4"
+
+description: |
+  Lorem ipsum dolor
