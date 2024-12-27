@@ -1,0 +1,31 @@
+card_type: item
+image_location: None
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Cloak of the Manta Ray",
+      "source": "DMG",
+      "page": 159,
+      "srd": true,
+      "tier": "minor",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "modifySpeed": {
+          "static": {
+              "swim": 60
+          }
+      },
+      "entries": [
+          "While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action."
+      ],
+      "lootTables": [
+          "Magic Item Table B"
+      ],
+      "hasFluffImages": true
+  }
+
+dm_rules: |
+  None

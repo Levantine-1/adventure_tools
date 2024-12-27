@@ -1,0 +1,11 @@
+card_type: spell
+image_location: "https://th.bing.com/th/id/OIP.vJYZ7Y94yN0mfnM8HmKpMAHaHa?pid=ImgDet&rs=1"
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+  }
+
+dm_rules: |
+  None

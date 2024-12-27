@@ -21,12 +21,7 @@ mode = "paper"
 
 
 config_sheet = sys.argv[1]
-try:
-    with open(config_sheet) as f:
-        conf = yaml.safe_load(f)
-except FileNotFoundError:
-    print("Error config sheet not found!")
-    exit(1)
+
 
 banners = {
     "stats":    "================= Stats ==================",
@@ -38,6 +33,14 @@ banners = {
     "sp_mats":  "============ Spell Materials ============="
 }
 
+def tabs_to_spaces(path):
+    with open (path, "r") as file:
+        data = file.read()
+        content = data.replace('\t', ' ' * 4)
+
+    with open(path, 'w') as file:
+        file.write(content)
+    file.close()
 
 def print_text(text, **no_newline):
     pp_newline = '''
@@ -257,8 +260,6 @@ def print_spell_constants(data):
 
     source = data["source"] + "." + str(data["page"])
 
-
-
     range_type = data["range"]["type"]
     range_dist_in_hex = "N/A"
     if data["range"]["distance"]["type"] == "self":
@@ -271,17 +272,22 @@ def print_spell_constants(data):
 
     verbal = str(data["components"]["v"]).capitalize()
     somatic = str(data["components"]["s"]).capitalize()
+    material_components = ""
     try:
-        materials = data["components"]["m"]
+        material_components = data["components"]["m"]
+        if material_components:
+            uses_materials = "True"
+        else:
+            uses_materials = "False"
     except KeyError:
-        materials = "None"
+        uses_materials = "False"
 
     school = "Level " + str(data["level"]) + " " + spell_school_key[data["school"]]
 
     components_table = PrettyTable()
     components_table.max_table_width = 42
-    components_table.field_names = ["Verbal", "Somatic", "Source"]
-    components_table.add_row([verbal, somatic, source])
+    components_table.field_names = ["Verbal", "Somatic", "Material"]
+    components_table.add_row([verbal, somatic, uses_materials])
 
     cast_time = str(data["time"][0]["number"]) + " " + str(data["time"][0]["unit"])
     duration_type = data["duration"][0]["type"]
@@ -292,10 +298,14 @@ def print_spell_constants(data):
         amount = str(data["duration"][0]["duration"]["amount"])
         unit = str(data["duration"][0]["duration"]["type"])
         spell_duration = amount + " " + unit
+    try:
+        concentration = data["duration"][0]["concentration"]
+    except KeyError:
+        concentration = "False"
     unit_duration_table = PrettyTable()
     unit_duration_table.max_table_width = 42
-    unit_duration_table.field_names = ["Cast Time", "Spell Duration"]
-    unit_duration_table.add_row([cast_time, spell_duration])
+    unit_duration_table.field_names = ["Cast Time", "Duration", "Concentrate"]
+    unit_duration_table.add_row([cast_time, spell_duration, concentration])
 
     range_table = PrettyTable()
     range_table.max_table_width = 42
@@ -312,13 +322,13 @@ def print_spell_constants(data):
     printerprint.text(range_table)
     printerprint.text("\n")
     printerprint.text(banners["sp_mats"])
-    print_text(text=materials)
+    print_text(text=material_components)
     printerprint.text("\n")
 
 
 def print_5e_spell_card():
     ignore_keys = ["otherSources", "time", "range", "components", "duration", "classes", "areaTags", "level", "school",
-                   "source", "page", "name"]
+                   "source", "page", "name", "feats", "miscTags", "entriesHigherLevel"]
     data = json.loads(conf["json_data"])
 
     title = data["name"]
@@ -328,6 +338,35 @@ def print_5e_spell_card():
     print_spell_constants(data)
 
     for key in data:
+        if key == "classes":
+            class_list = data[key].get("fromClassList", [])
+            subclass_list = data[key].get("fromSubclass", [])
+
+            print_text(text="Classes:")
+            for class_entry in class_list:
+                class_name = class_entry.get("name", "Unknown")
+                print_text(text=f"- {class_name}")
+
+            print_text(text="Subclasses:")
+            for subclass_entry in subclass_list:
+                class_name = subclass_entry.get("class", {}).get("name", "Unknown")
+                subclass_name = subclass_entry.get("subclass", {}).get("name", "Unknown")
+                print_text(text=f"- {class_name}: {subclass_name}")
+        if key == "feats":
+            feat_list = data[key]
+            print_text(text="Feats:")
+            for feat_entry in feat_list:
+                feat_name = feat_entry.get("name", "Unknown")
+                print_text(text=f"- {feat_name}")
+        if key == "entriesHigherLevel":
+            entries_higher_level = data[key]
+
+            print_text(text="Entries Higher Level:")
+            for entry in entries_higher_level:
+                entry_name = entry.get("name", "Unknown")
+                print_text(text=f"- {entry_name}")
+                for sub_entry in entry.get("entries", []):
+                    print_text(text=f"  - {sub_entry}")
         if key not in ignore_keys:
             if type(data[key]) is list:
                 print_text(text="")
@@ -377,6 +416,22 @@ def generate_custom_card():
     print_text(text=conf["description"])
     printerprint.cut()
 
+
+try:
+    with open(config_sheet) as f:
+        conf = yaml.safe_load(f)
+except FileNotFoundError:
+    print("Error config sheet not found!")
+    exit(1)
+except yaml.YAMLError:
+    try:
+        print("Warning, Unable to parse config, trying to convert tabs to spaces")
+        tabs_to_spaces(config_sheet)
+        with open(config_sheet) as f:
+            conf = yaml.safe_load(f)
+    except yaml.YAMLError as e:
+        print(f"Error parsing config sheet: {e}")
+        exit(1)
 
 if conf["card_type"] == "character":
     generate_character_card()
