@@ -5,27 +5,25 @@ max_height: 200
 data_source: 5etools
 
 json_data: |
-  {
-      "name": "Cloak of the Manta Ray",
-      "source": "DMG",
-      "page": 159,
-      "srd": true,
-      "tier": "minor",
-      "rarity": "uncommon",
-      "wondrous": true,
-      "modifySpeed": {
-          "static": {
-              "swim": 60
-          }
-      },
-      "entries": [
-          "While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action."
-      ],
-      "lootTables": [
-          "Magic Item Table B"
-      ],
-      "hasFluffImages": true
-  }
+    {
+        "name": "Armor of Vulnerability",
+        "source": "XDMG",
+        "page": 231,
+        "freeRules2024": true,
+        "type": "GV|XDMG",
+        "rarity": "rare",
+        "reqAttune": true,
+        "curse": true,
+        "items": [
+            "Armor of Vulnerability (Bludgeoning)|XDMG",
+            "Armor of Vulnerability (Piercing)|XDMG",
+            "Armor of Vulnerability (Slashing)|XDMG"
+        ],
+        "lootTables": [
+            "Armaments - Rare|XDMG"
+        ],
+        "entries": []
+    }
 
 dm_rules: |
   None

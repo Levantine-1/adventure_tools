@@ -1,0 +1,30 @@
+card_type: item
+image_location: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUsK6NBzmrSgB7fq3v3hTpR-WAx79V3cO8-A&s
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+      "name": "Adamantine Breastplate",
+      "source": "XDMG",
+      "edition": "one",
+      "type": "MA|XPHB",
+      "rarity": "uncommon",
+      "weight": 20,
+      "ac": 14,
+      "armor": true,
+      "entries": [],
+      "page": 227,
+      "freeRules2024": true,
+      "lootTables": [
+          "Armaments - Uncommon|XDMG"
+      ],
+      "genericVariant": {
+          "name": "Adamantine Armor",
+          "source": "XDMG"
+      }
+  }
+
+dm_rules: |
+  None
