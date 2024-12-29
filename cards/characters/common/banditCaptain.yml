@@ -1,0 +1,38 @@
+card_type: character
+name: Bandit Captain
+image_location: "https://www.dndbeyond.com/avatars/thumbnails/0/181/1000/1000/636252761965117015.jpeg"
+image_rotation: 0
+
+physical_description: "Human"
+alignment: "Neutral Evil"
+stats:
+  ArmorClass: 15
+  HP: 65
+  STR: 15
+  DEX: 16
+  CON: 14
+  INT: 14
+  WIS: 11
+  CHA: 14
+
+skills:
+  Basic Melee Attack:
+    Descriptions:
+      - "+2 to hit, reach 1 hex, single target."
+      - "Hit 2 (1d4) bludgeon damage"
+  Multiattack:
+    Descriptions:
+      - "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers."
+
+  Scimitar Attack:
+    Descriptions:
+      - "Melee Weapon Attack: +5 to hit, reach 5 ft. one target. Hit: 6 (1d6 + 3) slashing damage."
+
+  Dagger Attack:
+    Descriptions:
+      - "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+
+challenge_rating: "2"
+
+description: |
+  Lorem ipsum dolor

@@ -19,9 +19,7 @@ printerprint = Network(printer_ip, profile="TM-T88V")
 # "screen" or "paper"
 mode = "paper"
 
-
 config_sheet = sys.argv[1]
-
 
 banners = {
     "stats":    "================= Stats ==================",
@@ -328,7 +326,7 @@ def print_spell_constants(data):
 
 def print_5e_spell_card():
     ignore_keys = ["otherSources", "time", "range", "components", "duration", "classes", "areaTags", "level", "school",
-                   "source", "page", "name", "feats", "miscTags", "entriesHigherLevel"]
+                   "source", "page", "name", "feats", "miscTags", "entriesHigherLevel", "races"]
     data = json.loads(conf["json_data"])
 
     title = data["name"]

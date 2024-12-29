@@ -1,0 +1,27 @@
+card_type: character
+name: SKYWEAVER
+image_location: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR57u0d-4-fRD2g60ecFcKQ75kzXF3WK6cbDt8WTx8Z_3Jh2MucmIx7BlLd0sGbZrEu_0Zh9kfOJZsDYMRXzlF0guZ9X7vsxXL8aJQWML5v5UCrjXSpmdeHwfMpEJBrZhRMG1dAW-UMxHb/s1600/B_stJMnVAAAS6Fl.jpg"
+image_rotation: 0
+
+physical_description: "Human"
+alignment: "Chaotic Evil"
+stats:
+  ArmorClass: 15
+  HP: 44
+  STR: 8
+  DEX: 14
+  CON: 12
+  INT: 11
+  WIS: 10
+  CHA: 16
+
+skills:
+  Basic Melee Attack:
+    Descriptions:
+      - "+2 to hit, reach 1 hex, single target."
+      - "Hit 2 (1d4) bludgeon damage"
+
+challenge_rating: "1/4"
+
+description: |
+  Speed 30 ft

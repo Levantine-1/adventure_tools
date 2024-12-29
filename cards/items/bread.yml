@@ -1,0 +1,23 @@
+card_type: item
+image_location: "https://static.wikia.nocookie.net/forgottenrealms/images/9/91/Cheese_%26_bread-5e.jpg"
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+    "name": "Bread (loaf)",
+    "source": "XPHB",
+    "page": 231,
+    "freeRules2024": true,
+    "type": "FD|XPHB",
+    "rarity": "none",
+    "value": 2,
+    "miscTags": [
+        "CNS"
+    ],
+    "entries": []
+  }
+
+dm_rules: |
+  Enough supplies for one long rest

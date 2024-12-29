@@ -1,27 +1,32 @@
 card_type: character
 name: "Guard"
-image_location: "https://i.pinimg.com/originals/30/e6/a9/30e6a9943dcc5c18f109d7b25631e5a4.png"
+# Archer
+image_location: "https://i.pinimg.com/originals/6d/e0/5e/6de05ee6cbaa959db11360aac425ec7f.png"
+# Melee
+# image_location: "https://i.pinimg.com/originals/b3/81/85/b3818505146afe42a7e93756b553527a.png"
 image_rotation: 0
 
-physical_description: "Female Human Guard"
+physical_description: "Human Guard"
 alignment: "Neutral Good"
 stats:
-  ArmorClass: 5
-  HP: 5
-  STR: 10
-  DEX: 10
-  CON: 10
+  ArmorClass: 16
+  HP: 26
+  STR: 13
+  DEX: 12
+  CON: 14
   INT: 10
-  WIS: 10
+  WIS: 11
   CHA: 10
 
 skills:
-  Basic Melee Attack:
+#  Spear Attack:
+#    Descriptions:
+#      - "Melee Weapon Attack: +3 to hit, reach 5 ft. one target. Hit: 12 (3d6 + 2) piercing damage, or 15 (3d8 + 2) piercing damage if used with two hands to make a melee attack."
+  Light Crossbow:
     Descriptions:
-      - "+4 to hit, 1 hex reach, single target"
-      - "2 (1d4) bludgeoning damage"
+      - "+3 to hit, range 80/320 ft., one target. Hit: 12 (3d8 + 2) piercing damage."
 
-challenge_rating: "1/4 (50XP)"
+challenge_rating: "1/2 (100 XP)"
 
 description: |
-  Common Human found anywhere
+  Member of the city guard

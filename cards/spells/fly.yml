@@ -1,0 +1,158 @@
+card_type: spell
+image_location: "https://th.bing.com/th/id/OIP.vJYZ7Y94yN0mfnM8HmKpMAHaHa?pid=ImgDet&rs=1"
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+    "name": "Fly",
+    "source": "PHB",
+    "page": 243,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+        {
+            "source": "RMR",
+            "page": 54
+        }
+    ],
+    "reprintedAs": [
+        "Fly|XPHB"
+    ],
+    "level": 3,
+    "school": "T",
+    "time": [
+        {
+            "number": 1,
+            "unit": "action"
+        }
+    ],
+    "range": {
+        "type": "point",
+        "distance": {
+            "type": "touch"
+        }
+    },
+    "components": {
+        "v": true,
+        "s": true,
+        "m": "a wing feather from any bird"
+    },
+    "duration": [
+        {
+            "type": "timed",
+            "duration": {
+                "type": "minute",
+                "amount": 10
+            },
+            "concentration": true
+        }
+    ],
+    "entries": [
+        "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall."
+    ],
+    "entriesHigherLevel": [
+        {
+            "type": "entries",
+            "name": "At Higher Levels",
+            "entries": [
+                "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+            ]
+        }
+    ],
+    "miscTags": [
+        "SCT"
+    ],
+    "areaTags": [
+        "ST"
+    ],
+    "classes": {
+        "fromClassList": [
+            {
+                "name": "Sorcerer",
+                "source": "PHB"
+            },
+            {
+                "name": "Warlock",
+                "source": "PHB"
+            },
+            {
+                "name": "Wizard",
+                "source": "PHB"
+            },
+            {
+                "name": "Artificer",
+                "source": "TCE"
+            }
+        ],
+        "fromSubclass": [
+            {
+                "class": {
+                    "name": "Bard",
+                    "source": "XPHB"
+                },
+                "subclass": {
+                    "name": "College of Lore",
+                    "shortName": "Lore",
+                    "source": "XPHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Fighter",
+                    "source": "XPHB"
+                },
+                "subclass": {
+                    "name": "Eldritch Knight",
+                    "shortName": "Eldritch Knight",
+                    "source": "XPHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Rogue",
+                    "source": "XPHB"
+                },
+                "subclass": {
+                    "name": "Arcane Trickster",
+                    "shortName": "Arcane Trickster",
+                    "source": "XPHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Fighter",
+                    "source": "PHB"
+                },
+                "subclass": {
+                    "name": "Eldritch Knight",
+                    "shortName": "Eldritch Knight",
+                    "source": "PHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Rogue",
+                    "source": "PHB"
+                },
+                "subclass": {
+                    "name": "Arcane Trickster",
+                    "shortName": "Arcane Trickster",
+                    "source": "PHB"
+                }
+            }
+        ]
+    },
+    "optionalfeatures": [
+        {
+            "name": "Ride the Wind",
+            "source": "PHB",
+            "featureType": [
+                "ED"
+            ]
+        }
+    ]
+  }
+
+dm_rules: |
+  None

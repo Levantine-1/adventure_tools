@@ -1,0 +1,26 @@
+card_type: character
+name: Horse
+image_location: "https://www.dndbeyond.com/avatars/thumbnails/9/904/1000/1000/636334288913250513.jpeg"
+image_rotation: 0
+
+physical_description: "Animal"
+alignment: "Unaligned"
+stats:
+  ArmorClass: 10
+  HP: 15
+  STR: 18
+  DEX: 10
+  CON: 15
+  INT: 2
+  WIS: 11
+  CHA: 7
+
+skills:
+   Hooves. Melee Attack:
+    Descriptions:
+      - "Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Bludgeoning damage."
+
+challenge_rating: "1/4"
+
+description: |
+  Neigh neigh

@@ -1,0 +1,29 @@
+card_type: character
+name: "Guard Captain"
+image_location: "https://i.pinimg.com/736x/53/a5/f1/53a5f1264b97bc00b5c549c3bd330808.jpg"
+image_rotation: 0
+
+physical_description: "Human Guard"
+alignment: "Neutral Good"
+stats:
+  ArmorClass: 18
+  HP: 45
+  STR: 13
+  DEX: 12
+  CON: 14
+  INT: 10
+  WIS: 11
+  CHA: 10
+
+skills:
+  Spear Attack:
+    Descriptions:
+      - "Melee Weapon Attack: +3 to hit, reach 5 ft. one target. Hit: 12 (5d6 + 2) piercing damage, or 15 (6d8 + 2) piercing damage if used with two hands to make a melee attack."
+  Light Crossbow:
+    Descriptions:
+      - "+3 to hit, range 80/320 ft., one target. Hit: 12 (6d8 + 2) piercing damage."
+
+challenge_rating: "2 (200 XP)"
+
+description: |
+  Member of the city guard

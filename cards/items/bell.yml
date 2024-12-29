@@ -1,0 +1,21 @@
+card_type: item
+image_location: None
+image_rotation: 0
+max_height: 200
+data_source: 5etools
+
+json_data: |
+  {
+    "name": "Bell",
+    "source": "XPHB",
+    "page": 224,
+    "freeRules2024": true,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 100,
+    "entries": [
+        "When rung as a {@action Utilize|XPHB} action, a Bell produces a sound that can be heard up to 60 feet away."
+    ]
+  }
+dm_rules: |
+  None

@@ -1,0 +1,189 @@
+card_type: spell
+image_location: "https://th.bing.com/th/id/OIP.vJYZ7Y94yN0mfnM8HmKpMAHaHa?pid=ImgDet&rs=1"
+image_rotation: 0
+data_source: 5etools
+
+json_data: |
+  {
+    "name": "Lightning Bolt",
+    "source": "PHB",
+    "page": 255,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+        {
+            "source": "RMR",
+            "page": 56
+        }
+    ],
+    "reprintedAs": [
+        "Lightning Bolt|XPHB"
+    ],
+    "level": 3,
+    "school": "V",
+    "time": [
+        {
+            "number": 1,
+            "unit": "action"
+        }
+    ],
+    "range": {
+        "type": "line",
+        "distance": {
+            "type": "feet",
+            "amount": 100
+        }
+    },
+    "components": {
+        "v": true,
+        "s": true,
+        "m": "a bit of fur and a rod of amber, crystal, or glass"
+    },
+    "duration": [
+        {
+            "type": "instant"
+        }
+    ],
+    "entries": [
+        "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 8d6} lightning damage on a failed save, or half as much damage on a successful one.",
+        "The lightning ignites flammable objects in the area that aren't being worn or carried."
+    ],
+    "entriesHigherLevel": [
+        {
+            "type": "entries",
+            "name": "At Higher Levels",
+            "entries": [
+                "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 8d6|3-9|1d6} for each slot level above 3rd."
+            ]
+        }
+    ],
+    "damageInflict": [
+        "lightning"
+    ],
+    "savingThrow": [
+        "dexterity"
+    ],
+    "miscTags": [
+        "OBJ"
+    ],
+    "areaTags": [
+        "L"
+    ],
+    "classes": {
+        "fromClassList": [
+            {
+                "name": "Sorcerer",
+                "source": "PHB"
+            },
+            {
+                "name": "Wizard",
+                "source": "PHB"
+            }
+        ],
+        "fromSubclass": [
+            {
+                "class": {
+                    "name": "Artificer",
+                    "source": "TCE"
+                },
+                "subclass": {
+                    "name": "Armorer",
+                    "shortName": "Armorer",
+                    "source": "TCE"
+                }
+            },
+            {
+                "class": {
+                    "name": "Bard",
+                    "source": "XPHB"
+                },
+                "subclass": {
+                    "name": "College of Lore",
+                    "shortName": "Lore",
+                    "source": "XPHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Fighter",
+                    "source": "XPHB"
+                },
+                "subclass": {
+                    "name": "Eldritch Knight",
+                    "shortName": "Eldritch Knight",
+                    "source": "XPHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Rogue",
+                    "source": "XPHB"
+                },
+                "subclass": {
+                    "name": "Arcane Trickster",
+                    "shortName": "Arcane Trickster",
+                    "source": "XPHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Warlock",
+                    "source": "XPHB"
+                },
+                "subclass": {
+                    "name": "The Fathomless",
+                    "shortName": "Fathomless",
+                    "source": "TCE"
+                }
+            },
+            {
+                "class": {
+                    "name": "Druid",
+                    "source": "PHB"
+                },
+                "subclass": {
+                    "name": "Circle of the Land",
+                    "shortName": "Land",
+                    "source": "PHB",
+                    "subSubclass": "Mountain"
+                }
+            },
+            {
+                "class": {
+                    "name": "Fighter",
+                    "source": "PHB"
+                },
+                "subclass": {
+                    "name": "Eldritch Knight",
+                    "shortName": "Eldritch Knight",
+                    "source": "PHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Rogue",
+                    "source": "PHB"
+                },
+                "subclass": {
+                    "name": "Arcane Trickster",
+                    "shortName": "Arcane Trickster",
+                    "source": "PHB"
+                }
+            },
+            {
+                "class": {
+                    "name": "Warlock",
+                    "source": "PHB"
+                },
+                "subclass": {
+                    "name": "The Fathomless",
+                    "shortName": "Fathomless",
+                    "source": "TCE"
+                }
+            }
+        ]
+    }
+  }
+
+dm_rules: |
+  None

@@ -1,0 +1,27 @@
+card_type: character
+name: Princess Calca
+image_location: "https://static.wikia.nocookie.net/overlordmaruyama/images/7/7a/Calca_%28Anime%29.png"
+image_rotation: 0
+
+physical_description: "Human"
+alignment: "Neutral Good"
+stats:
+  ArmorClass: 10
+  HP: 10
+  STR: 10
+  DEX: 10
+  CON: 10
+  INT: 10
+  WIS: 10
+  CHA: 10
+
+skills:
+  Basic Melee Attack:
+    Descriptions:
+      - "+2 to hit, reach 1 hex, single target."
+      - "Hit 2 (1d4) bludgeon damage"
+
+challenge_rating: "1/4"
+
+description: |
+  Lorem ipsum dolor

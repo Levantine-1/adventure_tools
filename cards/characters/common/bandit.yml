@@ -1,15 +1,15 @@
 card_type: character
 name: Bandit
 # male
-#image_location: "https://i.pinimg.com/736x/6c/15/55/6c1555fe2fd5db94213a6629ae589068--art-pics-kingdom-under-fire.jpg"
+image_location: "https://i.pinimg.com/736x/6c/15/55/6c1555fe2fd5db94213a6629ae589068--art-pics-kingdom-under-fire.jpg"
 # female
-image_location: "https://i.pinimg.com/originals/08/b2/9d/08b29d983212815b82dd110a8ea8e6e0.png"
+#image_location: "https://i.pinimg.com/originals/08/b2/9d/08b29d983212815b82dd110a8ea8e6e0.png"
 image_rotation: 0
 
 physical_description: "Human"
 alignment: "Unlawful Neutral"
 stats:
-  ArmorClass: 0
+  ArmorClass: 10
   HP: 11
   STR: 11
   DEX: 12
@@ -23,9 +23,9 @@ skills:
     Descriptions:
       - "+3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
 
-  Light Crossbow:
-    Descriptions:
-      - "+3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+#  Light Crossbow:
+#    Descriptions:
+#      - "+3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
 
 challenge_rating: "1/8"
 
